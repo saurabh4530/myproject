@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>myproject.Arraydemo.Class1</StartupObject>
+	  <StartupObject>myproject.Collection1.Demolinklist</StartupObject>
   </PropertyGroup>
 
 </Project>

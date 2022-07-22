@@ -91,7 +91,7 @@ namespace myproject.loop
             int n1 = 0;
             int n2 = 1;
                 int n = 10;
-            for (int i = 1; i <=10; i++)
+            for (int i = 1; i <=n; i++)
             {
                 int sum = n1 + n2;
                 Console.WriteLine(n1);
@@ -121,7 +121,7 @@ namespace myproject.loop
 
         }
     }
-/*class prime
+class prime
     {
         static void Main(string[] args)
         {
@@ -146,7 +146,7 @@ namespace myproject.loop
             }
             Console.ReadLine();
         }
-    }*/
+    }
     class magic
     {
         static void Main(string[] args)

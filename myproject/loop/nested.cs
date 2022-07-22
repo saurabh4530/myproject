@@ -272,7 +272,7 @@ namespace myproject.loop
             Console.WriteLine();
         }
     }
-    class prime
+    class primenum
     {
         static void Main(string[] args)
         {

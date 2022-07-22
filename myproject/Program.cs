@@ -2,11 +2,27 @@
 
 namespace myproject
 {
-    class Program
+    public class P
     {
-        static void Main(string[] args)
+        public virtual void p()
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Parent ");
         }
     }
-}
+    public class T : P
+    {
+        public override void p()
+        {
+            Console.WriteLine("child");
+        }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                T t = new T();
+                t.p();
+            }
+        }
+    }  }
+    
+

@@ -69,7 +69,7 @@ namespace myproject.loop
             int i = 0;
             while (i <= 10)
             {
-                Console.WriteLine((i * i) + (i * i * i));
+                Console.WriteLine((i * i) + " "+(i * i * i));
                 i++;
 
             }

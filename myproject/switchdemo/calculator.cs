@@ -31,7 +31,8 @@ namespace myproject.switchdemo
                     break;
                 case "/": Console.WriteLine(num1/num2);
                     break;
-                default: answer = 0;
+                default:
+                    answer = 0;
                     break;
 
             }
