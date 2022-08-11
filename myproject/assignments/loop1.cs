@@ -4,7 +4,7 @@ using System.Text;
 
 namespace myproject.assignments
 {
-   /* class loop1
+   class loop1
     {
         static void Main(string[] args)
         {
@@ -116,7 +116,7 @@ namespace myproject.assignments
     class loop9
     {
 
-     /*   static void Main(string[] args)
+       static void Main(string[] args)
         {
 
             int num, product = 1;
@@ -194,5 +194,5 @@ namespace myproject.assignments
                 
             
         }
-    }*/
+    }
 }

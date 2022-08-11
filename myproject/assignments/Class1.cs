@@ -4,7 +4,7 @@ using System.Text;
 
 namespace myproject.assignments
 {
-   /* class Class1                                      //leap year
+    class Class1                                      //leap year
     {
         static void Main(string[] args)
         {
@@ -252,7 +252,7 @@ namespace myproject.assignments
             Console.ReadLine();
         }
     }
-   /* class class10                       //salary
+   class class10                       //salary
     {
         static void Main(string[] args)
         {
@@ -296,7 +296,7 @@ namespace myproject.assignments
         }
 
 
-    }*/
+    }
 
     class class11
     {

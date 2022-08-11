@@ -33,6 +33,7 @@ namespace myproject.Arraydemo
                 a[i] = int.Parse(Console.ReadLine());
             }
             Console.WriteLine("array conatain follwing element= " + string.Join(" ", a));
+            
             Console.ReadLine();
             int sum = 0;
             for (int i = 0; i < a.Length; i++)
@@ -97,9 +98,11 @@ namespace myproject.Arraydemo
         public static void Main(string[] args)
         {
 
+            
+            Console.WriteLine("enter size of array");
+            int k = int.Parse(Console.ReadLine());
+            int[] arr = new int[k];
             int s = 0;
-            int[] arr = new int[5];
-
             Console.Write("Enter array elements:");
             for (int i = 0; i < arr.Length; i++)
             {
@@ -108,9 +111,9 @@ namespace myproject.Arraydemo
 
             for (int i = 0; i < arr.Length; i++)
             {
-                int j = 2;
+             
                 int count = 1;
-
+                int j = 2;
                 while (j < arr[i])
                 {
                     if (arr[i] % j == 0)
@@ -141,10 +144,12 @@ namespace myproject.Arraydemo
                 a[i] = int.Parse(Console.ReadLine());
 
             }
+            Console.WriteLine(string.Join(" ", a));
+
             int sum = 0;
-            for (int j = 0; j < a.Length; j++)
+            for (int i = 0; i < a.Length; i++)
             {
-                sum = sum + a[j];
+                sum = sum + a[i];
             }
             Console.WriteLine(sum);
         }
@@ -163,7 +168,7 @@ namespace myproject.Arraydemo
         }
 
         max = min = arr[0];
-        for (i = 0; i < 5; i++)
+        for (i = 0; i < arr.Length; i++)
         {
             if (max < arr[i])
             {
@@ -217,6 +222,57 @@ namespace myproject.Arraydemo
         }
         
     }
+    class maxdiff
+    {
+        static void printresult(int[] arr, int arrsize)
+        {
+           
+
+            int printresult = arr[1] - arr[0];
+            int m, j;
+            for (m = 4; m < arr.Length; m++)
+            {
+                for (j = m + 1; j < arr.Length; j++)
+                {
+                    if (arr[j] - arr[m] > printresult)
+                        printresult = arr[j] - arr[m];
+
+                }
+            }
+            Console.WriteLine(printresult);
+        }
+        public static void Main()
+        {
+
+            int[] arr = { 2, 5, 7, 10, 25, 120};
+            printresult(arr, 5);
+
+        }
+    }
+
+    class Maxdiff
+    {
+
+        static void Main(string[] args)
+        {
+            int[] arr = { 2, 5, 7, 10, 25, 120 };
+
+            int printresult = arr[1] - arr[0];
+            int m, j;
+            for (m = 4; m < arr.Length; m++)
+            {
+                for (j = m + 1; j <arr.Length; j++)
+                {
+                    if (arr[j] - arr[m] > printresult)
+                       printresult = arr[j] - arr[m];
+                   
+                }
+            }
+            Console.WriteLine(printresult);
+
+        }
+    }
+}
    
     
-}
+

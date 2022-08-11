@@ -157,7 +157,7 @@ namespace myproject.ExceptionHandle
                 }
             }
             get { return password; }
-        }
+        } 
         static void Main(string[] args)
         {
             stud s = new stud();
@@ -165,7 +165,8 @@ namespace myproject.ExceptionHandle
             try
             {
                 s.Password = "abdc";
-            }catch(InvalidPasswordexception e)
+            }
+            catch(InvalidPasswordexception e)
             {
                 Console.WriteLine(e.Message);
             }

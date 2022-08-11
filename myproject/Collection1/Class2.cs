@@ -153,24 +153,33 @@ namespace myproject.Collection1
     class Demodictionary
     {
         static void Main(string[] args)
-        {
+        {//array--hashing technique
+            //key have to be unique
+            //to retrive from dictionary we pass key
             Dictionary<string, int> dd = new Dictionary<string, int>();
             dd.Add("ajinkya", 90);
             dd.Add("rupesh", 90);
             dd.Add("jyoti", 91);
             dd.Add("om", 99);
+            
+            //dd.Remove("rupesh");
+
             dd["ajinkya"] = 95;
-            dd.Remove("rupesh");
             Console.WriteLine(dd.Count);
             // dd.Clear();
             Console.WriteLine(dd.ContainsKey("om"));
             Console.WriteLine(dd.ContainsValue(90));
 
 
-           // List<string>keys = dd.Keys.ToList();
+         //   List<string>keys = dd.Keys.ToList();
             Console.WriteLine(dd["jyoti"]);
+            foreach (KeyValuePair<string,int> kv in dd)
+            {
+                Console.WriteLine(kv.Key +" "+kv.Value);
+            }
 
         }
     }
+    
     
 }

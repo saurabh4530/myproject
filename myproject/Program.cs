@@ -23,6 +23,26 @@ namespace myproject
                 t.p();
             }
         }
-    }  }
+    }class Patternn
+    {
+
+        static void Main(string[] args)
+        {
+            for (int i = 5; i >=1; i--)
+            {
+                for (int j = i; j >=i; j--)
+                {
+                    if (j%2==0)
+                    {
+                        Console.Write("1");
+                    }
+                    else
+                        Console.Write("0");
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
     
 

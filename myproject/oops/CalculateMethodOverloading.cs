@@ -33,15 +33,16 @@ namespace myproject.oops
         static void Main(string[] args)
         {
             CalculateMethodOverloading t = new CalculateMethodOverloading();
-            t.Area(1.5);
+           t.Area(1.5);
             t.Area(5);
             t.Area(6, 7);
             t.Area(2.5, 6);
+            
         }
     }
     class Arthmatic
     {                         // overloading
-        void Calculate()
+       public void Calculate()
         {
             int x = 3;
             int y = 7;

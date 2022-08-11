@@ -75,8 +75,8 @@ namespace myproject
         }
         static void Main(string[] args)
         {
-            int result = c3.fact(5);
-            Console.WriteLine(result);
+         ///  int result= c3.fact(5);
+            Console.WriteLine(c3.fact(5));
         }
     }
     class c4
@@ -213,6 +213,118 @@ namespace myproject
             Console.WriteLine(newstr);
         }
     }
+    class maxdiff
+    {
+        static void maxDiff(int[] arr, int arrsize)
+        {
+            int maxdiff = arr[1] - arr[0];
+            int i, j;
+            for (i = 4; i <= arrsize; i++)
+            {
+                for (j = i + 1; j <= arrsize; j++)
+                {
+                    if (arr[j] - arr[i] > maxdiff)
+                        maxdiff = arr[j] - arr[i];
+                }
+            }
+            Console.WriteLine(maxdiff);
+        }
+
+        
+        public static void Main()
+        {
+
+            int[] arr = { 2, 5, 7, 10, 25, 120 };
+             maxDiff(arr, 5);
+
+        }
+    }
+    class address
+    {
+        string cityname;
+        public string Cityname
+        {
+            get { return cityname; }
+            set { cityname = value; }
+        }
+    }
+  class Order
+    {
+        int orderid;
+        address city;
+        string custname;
+        bool isdelivered;
+        public int Orderid
+        {
+            get { return orderid; }
+            set { orderid = value; }
+
+        }
+        public string Custname
+        {
+            get { return custname; }
+            set { custname = value; }
+        }
+        public bool Isdelivered
+        {
+            get { return isdelivered; }
+            set { isdelivered = value; }
+        }
+        public address City
+        {
+            set;
+            get;
+        }
+
+    
+        static void Main(string[] args)
+        {
+            Order o = new Order();
+            o.Orderid = 123656;
+            o.Custname = "akshay";
+            o.Isdelivered = true;
+
+
+            o.City = new address();
+            o.City.Cityname = "pune";
+
+
+            Console.WriteLine("order id="+o.Orderid+"     customer name=  "+o.Custname+"      is order placed= "+o.Isdelivered+"     town=  "+o.City.Cityname);
+
+        }
+    }
+    public class Isprime
+    {
+        public static void Main(string[] args)
+        {
+            int n, i = 2; 
+            bool check = true;
+
+            Console.Write("Enter a number:");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            while (i < n)
+            {
+                if (n % i == 0)
+                {
+                    check = false;
+                    break;
+                }
+                i++;
+            }
+
+            if (check ==true)
+            {
+                Console.WriteLine("Number is prime:" + n);
+            }
+            else
+            {
+                Console.WriteLine("Number is not prime:" + n);
+            }
+        }
+    }
+
+
 }
 
 

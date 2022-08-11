@@ -90,17 +90,36 @@ namespace myproject.loop
         {
             int n1 = 0;
             int n2 = 1;
-                int n = 10;
+            int sum;
+           
+            int n = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("enter the num");
+            int x = int.Parse(Console.ReadLine());
             for (int i = 1; i <=n; i++)
             {
-                int sum = n1 + n2;
+
+
+
+
+                 sum = n1 + n2;
                 Console.WriteLine(n1);
+                if (x == n1)
+                {
+                    Console.WriteLine(true);
+                }
+                else
+                    Console.WriteLine(false);
+
+
                 n1 = n2;
                 n2 = sum;
-                Console.ReadLine();
+
+
 
             }
-            
+           
+           
         }
     }
     class power
